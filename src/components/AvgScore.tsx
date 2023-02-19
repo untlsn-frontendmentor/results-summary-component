@@ -15,7 +15,7 @@ export default function AvgScore(props: AvgScoreProps) {
 
   return (
     <div
-      class="bg-gradient-to-b from-c-navy to-c-blue rounded-full size-32 flex-(~ col) justify-center items-center mx-auto"
+      class="bg-gradient-to-b from-c-navy to-c-transparent rounded-full size-40 flex-(~ col) justify-center items-center mx-auto"
     >
       <p class="text-3rem font-bold">{avg()}</p>
       <p class="text-sm opacity-60">of 100</p>

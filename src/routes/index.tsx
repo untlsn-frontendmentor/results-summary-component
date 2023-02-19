@@ -5,9 +5,9 @@ export default function Home() {
   const data = useData();
 
   return (
-    <main class="">
-      <article class="">
-        <section class="bg-gradient-to-rb from-c-purple to-c-blue text-(white center) rounded-b-2xl p-12 space-y-4">
+    <main class="min-h-screen md:grid place-items-center">
+      <article class="md:(grid-(~ cols-2) max-w-160 m-auto shadow-(xl gray-200) rounded-xl)">
+        <section class="bg-gradient-to-rb from-c-purple to-c-blue text-(white center) rounded-b-2xl md:rounded-t-2xl p-12 space-y-4">
           <h1 class="opacity-70 text-xl">Your Result</h1>
           <AvgScore data={data()} />
           <h2 class="text-2xl font-bold">Great</h2>
@@ -23,13 +23,13 @@ export default function Home() {
                   <p style={{ color: line.color }}>{line.category}</p>
                   <p class="ml-auto">
                     <b>{line.score}</b>
-                    <span>{' / 100'}</span>
+                    <span class="opacity-60">{' / 100'}</span>
                   </p>
                 </li>
               )}
             </For>
           </ul>
-          <button type="button" class="bg-c-steel text-white w-full rounded-full h-14 font-bold">
+          <button type="button" class="bg-c-steel text-white w-full rounded-full h-12 font-bold hocus:bg-gradient-to-rb from-c-purple to-c-blue">
             Continue
           </button>
         </section>
